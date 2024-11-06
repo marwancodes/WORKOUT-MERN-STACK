@@ -25,7 +25,7 @@ const Home = () => {
       // instead use process.env.VITE_REACT_APP_BACKEND_BASEURL
       const { data } = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/workouts`, { 
         headers: {
-          'Authorization': `Bearer ${user.token}` //! For Authorization Request
+          'Authorization': `Bearer ${user.token}` //! For Authorization Request.
         }
       }); 
       
