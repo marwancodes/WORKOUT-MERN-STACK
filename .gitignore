@@ -1,0 +1,16 @@
+
+# Node modules
+frontend/node_modules/
+backend/node_modules/
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Build output
+frontend/dist/
+backend/dist/
