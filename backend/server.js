@@ -16,7 +16,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // middleware
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://workout-mern-stack-euyv.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json())
 app.use((req, res, next) => {  // next function: to let go to the next middleware, which is mean the request can't complet
     console.log(req.path, req.method);
